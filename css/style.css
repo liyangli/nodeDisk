@@ -1,0 +1,104 @@
+body {
+  /*background-color: lightgray;*/
+  text-align: center;
+}
+.btn {
+  color: #336699;
+  background-color:#B6CFE1;
+  border: 1px solid #587793;
+  border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.export {
+  margin-top: 10px;
+  width: 120px;
+}
+.saveTemp {
+  margin-top: 10px;
+  width: 120px;
+}
+ul {
+  list-style: none;
+}
+li {
+  float: left;
+  line-height: 30px;
+  width: 956px;
+  margin-top: 2px;
+}
+
+/*div 向左三角*/
+.arrow-left {
+  width: 0px;
+  height: 0px;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #336699;
+  font-size: 0px;
+  line-height: 0px;
+  position: relative;
+  float: right;
+  right: 15px;
+  top:5px;
+}
+
+.arrow-right {
+  width: 0px;
+  height: 0px;
+  border-bottom:  10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #336699;
+  font-size: 0px;
+  line-height: 0px;
+  position: relative;
+  float: right;
+  right: 15px;
+  top:5px;
+}
+/*描述信息，作为按钮左边进行使用*/
+.desc-label {
+  position: relative;
+  height: 30px;
+  width: 90%;
+  background-color: #B6CFE1;
+  float:right;
+  text-align: left;
+  border-radius: 5px;
+}
+label {
+  text-align: left;
+  width:100%;
+}
+legend {
+  text-align:left;
+}
+.autoHide {
+  display:block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.position-abs {
+  position: absolute;
+}
+
+.time {
+  width: 90%;
+  border: 1px solid rgba(0,0,0,0.4);
+  height: 23px;
+  background: url(../business/utils/My97DatePicker/skin/datePicker.gif) no-repeat right;
+  border-radius: 2px;
+}
+.filePath {
+  width: 90%;
+  border: 1px solid rgba(0,0,0,0.4);
+  height: 23px;
+  border-radius: 2px;
+}

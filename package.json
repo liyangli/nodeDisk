@@ -1,0 +1,29 @@
+{
+  "name": "nodedisk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ui/index.html",
+  "window": {
+    "title": "报表导出",
+    "toolbar": true,
+    "frame": true,
+    "show": true,
+    "width": 1000,
+    "height": 330,
+    "min_width":1000,
+    "min_height": 330,
+    "max_width":1000,
+    "max_height": 330,
+    "resizable": false,
+    "positoin": "center"
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "request": "^2.70.0"
+  },
+  "scripts": {
+    "start": "nw ."
+  }
+}

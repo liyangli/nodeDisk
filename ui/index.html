@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>报表导出</title>
+        <link rel="styleSheet" type="text/css" href="../css/style.css">
+        <link rel="styleSheet" type="text/css" href="../business/utils/boxy/boxy.css">
+        <script src="../business/utils/jquery.js"></script>
+        <script src="../business/utils/My97DatePicker/WdatePicker.js"></script>
+        <script type="text/javascript"  src="../business/utils/boxy/jquery.boxy.js"></script>
+        <script src="../business/utils/app.js"></script>
+    </head>
+    <body>
+      <!--导出条件开始-->
+      <div>
+        <ul>
+          <li>
+            <label>模板选择：</label>
+            <select class="filePath" id="tempSelect">
+                <option>请选择</option>
+            </select>
+          </li>
+          <li>
+            <label>模板名称：</label>
+            <input type="text" class="filePath" id="tempName" />
+          </li>
+          </li>
+             <li>
+               <div class="position-abs" data-val="monitor">
+                 <input type="button" value="前端" class="btn"/>
+                 <span class="arrow-right"></span>
+               </div>
+               <div class="desc-label">
+                 <label id="monitor"  class="autoHide"></label>
+                 <input type="hidden" id="moniterIds" value=""/>
+               </div>
+
+             </li>
+             <li>
+               <div class="position-abs" data-val="server">
+                 <input type="button" value="频道" class="btn"/>
+                 <span class="arrow-right"></span>
+               </div>
+               <div class="desc-label">
+                 <label id="service" class="autoHide"></label>
+                 <input type="hidden" id="serviceIds" value=""/>
+               </div>
+
+             </li>
+             <li>
+               <div class="position-abs" data-val="alarmType">
+                 <input type="button" value="告警类型" class="btn"/>
+                 <span class="arrow-right"></span>
+               </div>
+               <div class="desc-label">
+                 <label id="alarmType" class="autoHide"></label>
+                 <input type="hidden" id="alarmTypeIds" value=""/>
+               </div>
+
+             </li>
+             <li>
+               <label>开始时间：</label>
+               <input type="text" id="startTime" class="time" onclick="WdatePicker({maxDate:'#F{$dp.$D(\'endTime\')}',dateFmt:'yyyy-MM-dd HH:mm:ss',isShowClear:false})"  />
+             </li>
+             <li>
+               <label>结束时间：</label>
+               <input type="text" id="endTime" class=" time" onclick="WdatePicker({minDate:'#F{$dp.$D(\'startTime\')}',maxDate:'2022-12-31',dateFmt:'yyyy-MM-dd HH:mm:ss',isShowClear:false})"/>
+             </li>
+             <li>
+               <label>导出路径：</label>
+               <input type="text" id="filePath" class="filePath" value="E:\\"/>
+             </li>
+             <li style="display: none;">
+               <label>访问路径：</label>
+               <input type="text" id="url" class="filePath" value="localhost"/>
+             </li>
+             <li>
+                <input type="button" value="生成报表文件" class="btn export" />
+                <input type="button" value="应用为模板" class="btn saveTemp" />
+             </li>
+        </ul>
+
+      </div>
+      <!--导出条件结束-->
+
+    </body>
+</html>
